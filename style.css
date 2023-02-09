@@ -33,7 +33,7 @@ img{
                 text-decoration:none;
             }
             a:visited {
-                color: blue;
+                color: rgb(122, 145, 123);
             }
             .content{
                 padding-left: 5%;
