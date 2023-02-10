@@ -35,51 +35,14 @@ img{
             a:visited {
                 color: rgb(122, 145, 123);
             }
-            .content{
-                padding-left: 5%;
-                padding-top: 2%;
-                height:100%;
-            }
-            .picture{
-                float:left;
-                height:1000px;
-                width:300px;
-                border-right: 1px solid black;
-                height: 500px;
-                margin-right: -3px;
-                font-size: 20px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
+                
             .description{
-                float:left;
-                padding-left: 5%;
-            }
-            .name{
-                margin-left: 30px;
-                font-size: larger;
-                margin-bottom: 0px;
-            }
-            .singer{
-                margin-left: 15px;
-                margin-top: 0px;
-            }
-            h1{
-                padding-bottom: 30px;
-            }
-
-            /* Media Queries */
-            @media only screen and (max-width: 800px) {
-                .picture{
-                    float: none;
-                    width: 100%;
-                    height: auto;
-                    margin-right: 0;
-                }
-                .description{
-                    float: none;
-                    padding-left: 0;
-                    width: 100%;
-                }
+                display: flex;
+                flex: 5;
+                /* text-align: center; */
+                padding-bottom: 20px;
+                flex-direction: column;
+                
             }
             progress{
                 width: 500px;
@@ -90,3 +53,48 @@ img{
                 margin-bottom: 10px;
               }
 body{font-family:"Lucida Console", "Courier New", monospace ;}
+.content{display:flex;
+    flex: 10;}
+
+footer {position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+text-align: center;
+border: 1px solid  rgb(202, 193, 193);
+flex-direction: column;}
+
+.picture{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    float:left;
+   padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;}
+@media only screen and  (max-width: 800px){
+
+    h4{ flex-direction: row;margin-left: 0px;margin-right: 0px;}
+        
+    .content{ flex-direction: column;}
+    
+    
+    
+    .name{
+        margin-left: 30px;
+        font-size: larger;
+        margin-bottom: 0px;
+    }
+    .singer{
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+    h1{
+        padding-bottom: 30px;
+    }
+    footer{
+        position: relative;
+        text-align: center;
+        flex-direction: column;
+    }
+}
